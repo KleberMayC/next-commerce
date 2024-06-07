@@ -13,9 +13,7 @@ export default function Product({ product} : ProductProps) {
         <ProductImage product={product} fill />
       </div>
       <div className="flex justify-between font-bold my-3"> 
-        <p className="w-40 truncate">
-            {product.name}
-        </p>  
+        <p className="w-40 truncate">{product.name}</p>  
         <p className="text-md text-teal-300">
             {formatPrice( product.price)}
         </p>
